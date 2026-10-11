@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porsche 911 — La Leyenda</title>
+  <style>
+    :root {
+      --negro: #0d0d0d;
+      --gris: #161616;
+      --rojo: #d5001c;
+      --blanco: #f5f5f5;
+      --culo: #999;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--negro);
+      color: var(--blanco);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0d0d0d 0%, #1c1c1c 50%, #d5001c 100%);
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom: 3px solid var(--rojo);
+    }
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    header h1 span { color: var(--rojo); }
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #ccc;
+      font-style: italic;
+    }
+    .barra {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: #000;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #333;
+    }
+    .barra a { color: var(--culo); text-decoration: none; transition: color .2s; }
+    .barra a:hover { color: var(--rojo); }
+    main { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    section { margin-bottom: 60px; }
+    h2 {
+      font-size: 2rem;
+      border-left: 6px solid var(--rojo);
+      padding-left: 15px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    p { color: #ddd; margin-bottom: 15px; }
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: var(--gris);
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 22px;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: var(--rojo); }
+    .card h3 { color: var(--rojo); margin-bottom: 8px; font-size: 1.15rem; }
+    .card .spec { font-size: 1.6rem; font-weight: bold; }
+    .card small { color: var(--culo); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+    th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #333; }
+    th { background: #1c1c1c; color: var(--rojo); text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; }
+    tr:hover td { background: #1a1a1a; }
+    blockquote {
+      border-left: 4px solid var(--rojo);
+      background: #141414;
+      padding: 20px 25px;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #ccc;
+      border-radius: 0 8px 8px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: var(--culo);
+      font-size: 0.85rem;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Porsche <span>911</span></h1>
+    <p>"El deportivo por excelencia. Evolución, no revolución."</p>
+  </header>
+
+  <nav class="barra">
+    <a href="#historia">Historia</a>
+    <a href="#generaciones">Generaciones</a>
+    <a href="#cifras">Cifras</a>
+    <a href="#curiosidades">Curiosidades</a>
+  </nav>
+
+  <main>
+
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>
+        El Porsche 911 nació en <strong>1963</strong> en el Salón de Fráncfort bajo el nombre de
+        <em>Porsche 901</em>. Peugeot reclamó los derechos sobre los números con "0" central,
+        así que Porsche lo rebautizó como <strong>911</strong> en 1964.
+      </p>
+      <p>
+        Diseñado por Ferdinand Alexander "Butzi" Porsche, su silueta —motor trasero bóxer,
+        faros redondos y línea descendente— se ha mantenido reconocible durante más de
+        <strong>60 años</strong> y ocho generaciones. Es uno de los pocos coches que sigue
+        fiel a su fórmula original.
+      </p>
+      <blockquote>
+        "El 911 es el único coche que puedes conducir todos los días y llevar a un circuito
+        el fin de semana." — Filosofía Porsche
+      </blockquote>
+    </section>
+
+    <section id="generaciones">
+      <h2>Generaciones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Generación</th>
+            <th>Años</th>
+            <th>Apodo interno</th>
+            <th>Detalle clave</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Original</td><td>1964–1973</td><td>901 / Serie F</td><td>Motor bóxer 2.0 L, 130 CV</td></tr>
+          <tr><td>G-Series</td><td>1974–1989</td><td>930</td><td>Aparece el Turbo y los paragolpes con impactos</td></tr>
+          <tr><td>964</td><td>1989–1993</td><td>964</td><td>Reinvención moderna, dirección asistida</td></tr>
+          <tr><td>993</td><td>1993–1998</td><td>993</td><td>Último con motor refrigerado por aire</td></tr>
+          <tr><td>996</td><td>1998–2004</td><td>996</td><td>Primer motor refrigerado por agua</td></tr>
+          <tr><td>997</td><td>2004–2012</td><td>997</td><td>Regreso a los faros redondos</td></tr>
+          <tr><td>991</td><td>2011–2019</td><td>991</td><td>Más grande, más eficiente, PDK</td></tr>
+          <tr><td>992</td><td>2019–act.</td><td>992</td><td>Actual, digital y más potente</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cifras">
+      <h2>El 911 Hoy (992)</h2>
+      <div class="tarjetas">
+        <div class="card">
+          <h3>Carrera S</h3>
+          <div class="spec">450 CV</div>
+          <small>3.0 L bóxer biturbo · 0–100 km/h en 3,7 s</small>
+        </div>
+        <div class="card">
+          <h3>Turbo S</h3>
+          <div class="spec">650 CV</div>
+          <small>3.7 L bóxer biturbo · 0–100 km/h en 2,7 s</small>
+        </div>
+        <div class="card">
+          <h3>GT3 RS</h3>
+          <div class="spec">525 CV</div>
+          <small>Aspirado natural · 9.000 rpm · pura pista</small>
+        </div>
+        <div class="card">
+          <h3>Velocidad máx.</h3>
+          <div class="spec">330 km/h</div>
+          <small>Según versión · Turbo S</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="curiosidades">
+      <h2>Curiosidades</h2>
+      <div class="tarjetas">
+        <div class="card">
+          <h3>Motor trasero</h3>
+          <p>Su configuración trasera da un reparto de peso peculiar y un sonido inconfundible.</p>
+        </div>
+        <div class="card">
+          <h3>El número 0</h3>
+          <p>Originalmente iba a llamarse 901, pero Peugeot ya usaba la numeración con 0 central.</p>
+        </div>
+        <div class="card">
+          <h3>Aire vs. Agua</h3>
+          <p>El paso del 993 (aire) al 996 (agua) fue una de las mayores polémicas entre fans.</p>
+        </div>
+        <div class="card">
+          <h3>Icono pop</h3>
+          <p>Ha aparecido en cine, videojuegos y hasta en canciones. Es un símbolo cultural.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Página creada por <strong>Claw</strong> 🦀 · Información con fines divulgativos · 2026
+  </footer>
+
+</body>
+</html>
